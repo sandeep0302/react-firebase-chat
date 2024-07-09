@@ -1,4 +1,7 @@
-import './chat.css'
+import './chat.css';
+import EmojiPicker from 'emoji-picker-react';
+
+
 
 const Chat = () => {
   return (
@@ -19,7 +22,20 @@ const Chat = () => {
         </div>
       </div>
       <div className="center"></div>
-      <div className="bottom"></div>
+      <div className="bottom">
+        <div className="icons">
+          <img src="./img.png" alt="" />
+          <img src="./camera.png" alt="" />
+          <img src="./mic.png" alt="" />
+        </div>
+        <input type="text" placeholder='type a message...' />
+        <div className="emoji">
+          <img src="./emoji.png" alt="" />
+          <EmojiPicker />
+        </div>
+        <button className='sendButton'>Send</button>
+       
+      </div>
     </div>
   )
 }
