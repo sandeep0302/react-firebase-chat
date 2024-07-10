@@ -4,7 +4,7 @@ const Detail = () => {
   return (
     <div className='detail'>
       <div className="user">
-        <img src="./avatar.png"  alt="" />
+        <img src="./avatar.png" alt="" />
         <h2>Sampath</h2>
         <p>Hello,how are you doing these days?</p>
       </div>
@@ -27,11 +27,36 @@ const Detail = () => {
             <img src="./arrowDown.png" alt="" />
           </div>
           <div className="photos">
-           <div className="photoItem">
-            <img src="https://via.placeholder.com/150" alt="" />
-            <span>photo_2024_2.png</span>
-           </div>
-           <img src="./download.png" alt="" />
+
+            <div className="photoItem">
+              <div className="photoDetail">
+                <img src="https://images.pexels.com/photos/7381200/pexels-photo-7381200.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="" />
+                <span>photo_2024_2.png</span>
+              </div>
+              <img src="./download.png" alt="" className='icon' />
+            </div>
+            <div className="photoItem">
+              <div className="photoDetail">
+                <img src="https://images.pexels.com/photos/7381200/pexels-photo-7381200.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="" />
+                <span>photo_2024_2.png</span>
+              </div>
+              <img src="./download.png" alt="" className='icon' />
+            </div>
+            <div className="photoItem">
+              <div className="photoDetail">
+                <img src="https://images.pexels.com/photos/7381200/pexels-photo-7381200.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="" />
+                <span>photo_2024_2.png</span>
+              </div>
+
+              <img src="./download.png" alt="" className='icon' />
+            </div><div className="photoItem">
+              <div className="photoDetail">
+                <img src="https://images.pexels.com/photos/7381200/pexels-photo-7381200.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="" />
+                <span>photo_2024_2.png</span>
+              </div>
+
+              <img src="./download.png" alt="" className='icon' />
+            </div>
           </div>
         </div>
         <div className="option">
@@ -41,6 +66,7 @@ const Detail = () => {
           </div>
         </div>
         <button>Block User</button>
+        <button className='logout'>Logout</button>
       </div>
     </div>
   )
